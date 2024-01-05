@@ -8,6 +8,7 @@ if __name__ == "__main__":
 
     elif num == 2:
         print("1 argument:")
+        print("{0}: {1}".format(i, argv[i]))
 
     else:
         print("{} arguments:".format(num - 1))
