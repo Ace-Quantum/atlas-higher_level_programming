@@ -2,6 +2,8 @@
 """
 I'm not sure how to document this
 """
+
+
 class Square:
     """I imagine I need something here too"""
 
@@ -15,7 +17,7 @@ class Square:
                 self.__size = size
 
     def area(self):
-        return (self.__size ** 2)
+        return self.__size**2
 
     @property
     def size(self):
@@ -29,4 +31,3 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-
