@@ -2,6 +2,9 @@
 """
 I'm not sure how to document this
 """
+
+
 class Square:
     """I imagine I need something here too"""
+
     pass
