@@ -77,7 +77,7 @@ class Rectangle:
                                 ret_str += ","
                         ret_str += "]"
                     else:
-                        ret_str += self.print_symbol
+                        ret_str += str(self.print_symbol)
                 if i != self.__height - 1:
                     ret_str += "\n"
             return ret_str
