@@ -2,8 +2,11 @@
 """
 I'm not sure how to document this
 """
+
+
 class Square:
     """I imagine I need something here too"""
+
     _Square__size = None
 
     def __init__(self, size_input=None):
