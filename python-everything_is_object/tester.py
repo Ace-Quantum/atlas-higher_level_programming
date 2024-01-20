@@ -1,5 +1,13 @@
 #!/usr/bin/python3
-"""I'm doing this because I legit don't know."""
-s1 = "Best"
-s2 = s1
-print(s1 is s2)
+copy_list = __import__('19-copy_list').copy_list
+
+my_list = [1, 2, 3]
+print(my_list)
+
+new_list = copy_list(my_list)
+
+print(my_list)
+print(new_list)
+
+print(new_list == my_list)
+print(new_list is my_list)
