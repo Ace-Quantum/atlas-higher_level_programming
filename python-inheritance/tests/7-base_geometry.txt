@@ -1,0 +1,10 @@
+'7-base_geometry.py test'
+
+'testing integer_validator'
+
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+'Testing basic string and integer for name and value respectively'
+>>> BaseGeometry.integer_validator("name", 7)
+
+'area()'
