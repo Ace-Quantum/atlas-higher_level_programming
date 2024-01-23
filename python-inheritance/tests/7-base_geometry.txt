@@ -7,4 +7,4 @@ Import from the module:
 
 Testing Validator with basic input:
 >>> geo.integer_validator("age", 3)
-
+3
