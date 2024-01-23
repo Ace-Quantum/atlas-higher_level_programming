@@ -12,3 +12,9 @@ Testing an already sorted list:
 [1, 4, 16, 37]
 >>> print(test_list)
 [1, 4, 16, 37]
+
+Testing append:
+>>> test_list = MyList()
+>>> test_list.append(3)
+>>> test_list.print_sorted()
+[3]
