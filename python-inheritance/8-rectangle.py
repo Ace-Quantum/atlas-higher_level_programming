@@ -13,4 +13,5 @@ class Rectangle(base):
 
 
     def __init__(self, width, height):
-        pass
+        __width = base.integer_validator(self, "width", width)
+        __height = base.integer_validator(self, "height", height)
