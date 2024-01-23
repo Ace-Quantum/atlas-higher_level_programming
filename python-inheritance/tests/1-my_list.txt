@@ -1,10 +1,7 @@
-import doctest
-doctest.testfile('1-my_list.txt')
-
 import from module:
-	>>> MyList = __import__('1-may_mylist').MyList
+>>> MyList = __import__('1-my_list').MyList
 
 Testing a list:
-	>>> test_list = MyList([13, 5, 9, 2])
-	>>> MyList
-	[2, 5, 9, 13]
+>>> test_list = MyList([13, 5, 9, 2])
+>>> test_list.print_sorted
+[2, 5, 9, 13]
