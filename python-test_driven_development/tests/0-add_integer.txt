@@ -1,0 +1,6 @@
+"""Idk what I'm even doing here tbh"""
+
+>>> add(1, 2)
+3
+>>> add(-1, 1)
+0

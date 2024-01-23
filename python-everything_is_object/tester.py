@@ -1,13 +1,17 @@
 #!/usr/bin/python3
-copy_list = __import__('19-copy_list').copy_list
+class Base():
+    """ My base class """
 
-my_list = [1, 2, 3]
-print(my_list)
+    __nb_instances = 0
 
-new_list = copy_list(my_list)
+    def __init__(self):
+        Base.__nb_instances += 1
+        self.id = Base.__nb_instances
 
-print(my_list)
-print(new_list)
+class User(Base):
+    """ My User class """
+    pass
 
-print(new_list == my_list)
-print(new_list is my_list)
+b = Base()
+u = User()
+print(u.id)
