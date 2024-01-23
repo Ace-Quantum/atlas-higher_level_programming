@@ -5,3 +5,9 @@ Testing a list:
 >>> test_list = MyList([13, 5, 9, 2])
 >>> test_list.print_sorted()
 [2, 5, 9, 13]
+
+Testing an already sorted list:
+>>> test_list = MyList([1, 4, 16, 37])
+>>> test_list.print_sorted()
+[1, 4, 16, 37]
+>>> print(test_list)
