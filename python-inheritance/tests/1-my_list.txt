@@ -11,3 +11,4 @@ Testing an already sorted list:
 >>> test_list.print_sorted()
 [1, 4, 16, 37]
 >>> print(test_list)
+[1, 4, 16, 37]
