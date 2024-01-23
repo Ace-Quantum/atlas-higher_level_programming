@@ -24,3 +24,8 @@ Testing append with negatives:
 >>> test_list.append(-3)
 >>> test_list.print_sorted()
 [-3]
+
+Testing a negative list:
+>>> test_list = MyList()
+>>> test_list.print_sorted()
+[]
