@@ -29,3 +29,10 @@ Testing a negative list:
 >>> test_list = MyList()
 >>> test_list.print_sorted()
 []
+
+Testing returned list (or, not returned list)
+>>> test_list = MyList([4, 7, 2, 33])
+>>> test_list.print_sorted
+[2, 4, 7, 33]
+>>> print(test_list)
+[4, 7, 2, 33]
