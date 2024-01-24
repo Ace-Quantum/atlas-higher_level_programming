@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+"""
+do some documentation
+"""
+
+
+import sys
+from os.path import isfile
+
+save = __import__('5-save_to_json_file').save_to_json_file
+load = __import__('6-load_from_json_file').load_from_json_file
+
+num = len(sys.argv)
+
+if isfile('./add_item.json'):
+    my_list = load('./add_item.json')
+else:
+    my_list = []
+
+for i in range(1, num):
+    my_list.append(sys.argv[i])
+
+save(my_list, 'add_item.json')
