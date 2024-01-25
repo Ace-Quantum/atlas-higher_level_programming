@@ -16,5 +16,8 @@ class Rectangle(base):
         __width = base.integer_validator(self, "width", width)
         __height = base.integer_validator(self, "height", height)
 
-    def __str__(self):
+    def area(self):
+        return __width * __height
 
+    def __str__(self):
+        return "[Rectangle] <" + __width + ">/<" + __height + ">"
