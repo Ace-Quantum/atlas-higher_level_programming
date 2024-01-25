@@ -13,7 +13,7 @@ class Square(rec):
 
 
     def __init__(self, size):
-        self.__size = integer_validator(self, "size", size)
+        self.__size = self.integer_validator(self, "size", size)
 
     def area(self, size):
         return self.__size ** 2
