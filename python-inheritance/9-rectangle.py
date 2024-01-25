@@ -20,4 +20,4 @@ class Rectangle(base):
         return self.__width * self.__height
 
     def __str__(self):
-        return "[Rectangle] <" + self.__width + ">/<" + self.__height + ">"
+        return "[Rectangle] <{0}>/<{1}>".format(self.__width, self.__height)
