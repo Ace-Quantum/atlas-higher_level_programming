@@ -15,5 +15,5 @@ class Square(rec):
     def __init__(self, size):
         self.__size = self.integer_validator("size", size)
 
-    def area(self, size):
+    def area(self):
         return self.__size ** 2
