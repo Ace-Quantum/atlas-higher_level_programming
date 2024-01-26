@@ -16,7 +16,13 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
+        current_attrs = vars(self)
+        ret_dict = dict()
+
         if type(attrs) is list and all(type(elm) == str for elm in attrs):
-            return True
+            for elm in attrs:
+                if hasattr(self, elm):
+                    ret_dict[key] = current_attrs[key]
+            return ret_dict
         else:
             return vars(self)
