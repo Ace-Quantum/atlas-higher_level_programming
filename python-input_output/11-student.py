@@ -19,7 +19,7 @@ class Student:
         current_attrs = vars(self)
         ret_dict = dict()
 
-        if type(attrs) is list and all(type(elm) == str for elm in attrs):
+        if type(attrs) is list and all(type(elm) is str for elm in attrs):
             for elm in attrs:
                 if hasattr(self, elm):
                     ret_dict[elm] = current_attrs[elm]
