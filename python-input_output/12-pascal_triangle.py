@@ -18,7 +18,7 @@ def pascal_triangle(n):
     for i in range(n):
         current_layer = []
         for j in range(i+1):
-            if j < i and i > 0 and j > 0:
+            if j > 0 and j < i and i > 0:
                 current_layer.append(ret_list[i-1][j-1] + ret_list[i-1][j])
             else:
                 current_layer.append(1)
