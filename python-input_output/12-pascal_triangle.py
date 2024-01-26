@@ -1,10 +1,15 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 Someday I will get good at documentation
 Today is not that day
 """
 
 def pascal_triangle(n):
+    """
+    I forgot to document here
+    And also to put a 3 at the end of my shebang
+    """
+
     ret_list = list[]
 
     if n <= 0:
