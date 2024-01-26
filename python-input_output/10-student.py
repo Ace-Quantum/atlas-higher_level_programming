@@ -22,7 +22,7 @@ class Student:
         if type(attrs) is list and all(type(elm) == str for elm in attrs):
             for elm in attrs:
                 if hasattr(self, elm):
-                    ret_dict[key] = current_attrs[key]
+                    ret_dict[elm] = current_attrs[elm]
             return ret_dict
         else:
             return vars(self)
