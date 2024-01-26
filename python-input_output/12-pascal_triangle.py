@@ -22,5 +22,5 @@ def pascal_triangle(n):
                 current_layer.append(ret_list[i-1][j-1] + ret_list[i-1][j])
             else:
                 current_layer.append(1)
-            ret_list.append(current_layer)
+        ret_list.append(current_layer)
     return ret_list
