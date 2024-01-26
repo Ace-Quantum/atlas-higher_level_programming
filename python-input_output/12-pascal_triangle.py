@@ -17,11 +17,11 @@ def pascal_triangle(n):
         return ret_list
 
     for i in range(n):
-        current_layer = []
+        c_layer = []
         for j in range(i + 1):
             if j > 0 and j < i and i > 0:
-                current_layer.append(ret_list[i - 1][j - 1] + ret_list[i - 1][j])
+                c_layer.append(ret_list[i - 1][j - 1] + ret_list[i - 1][j])
             else:
-                current_layer.append(1)
-        ret_list.append(current_layer)
+                c_layer.append(1)
+        ret_list.append(c_layer)
     return ret_list
