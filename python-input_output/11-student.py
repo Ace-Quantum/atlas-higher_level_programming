@@ -3,8 +3,8 @@
 Now we're getting into classes and JSON
 """
 
-class Student:
 
+class Student:
 
     """
     here's some documentation!
@@ -26,7 +26,7 @@ class Student:
             return ret_dict
         else:
             return vars(self)
-        
+
     def reload_from_json(self, json):
         self_dict = vars(self)
 

@@ -3,8 +3,8 @@
 Now we're getting into classes and JSON
 """
 
-class Student:
 
+class Student:
 
     """
     here's some documentation!
