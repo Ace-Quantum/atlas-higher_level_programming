@@ -16,7 +16,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        if type(attrs) is list and all(type(elm) = str for elm in attrs):
+        if type(attrs) is list and all(type(elm) == str for elm in attrs):
             return True
         else:
             return vars(self)
