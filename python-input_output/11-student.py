@@ -28,7 +28,8 @@ class Student:
             return vars(self)
         
     def reload_from_json(self, json):
-        new_attrs = json.dumps(json)
+        self_dict = vars(self)
 
-        for elm in new_attrs:
-            self[elm] = new_attrs[elm]
+        for key in json:
+            if key in self_dict:
+                setattr(self, key, json[key])
