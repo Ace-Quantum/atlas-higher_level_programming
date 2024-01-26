@@ -10,7 +10,7 @@ def pascal_triangle(n):
     And also to put a 3 at the end of my shebang
     """
 
-    ret_list = list[]
+    ret_list = []
 
     if n <= 0:
         return ret_list
