@@ -8,9 +8,9 @@ from models.base import Base
 
 class Rectangle(Base):
 
-"""
-And some more documentation
-"""
+    """
+    And some more documentation
+    """
 
     @property
     def width(self):
