@@ -4,6 +4,8 @@
 Here's some documentation for a rectangle
 """
 
+from models.base import Base
+
 class Rectangle(Base):
 
 """
