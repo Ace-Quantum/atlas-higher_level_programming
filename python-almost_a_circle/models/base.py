@@ -4,7 +4,11 @@
 I really wish I hadn't yammered
 """
 
-class base:
+class Base:
+
+    """
+    And I'd take it back if I could
+    """
 
     __nb_objects = 0
 
