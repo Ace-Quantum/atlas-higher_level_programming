@@ -83,10 +83,10 @@ class Rectangle(Base):
             print("")
         else:
             ret_str = ""
-            for i in range(0, self.__x):
+            for i in range(0, self.__y):
                 ret_str += "\n"
             for i in range(0, self.__height):
-                for j in range(0, self.__y):
+                for j in range(0, self.__x):
                     ret_str += " "
                 for j in range(0, self.__width):
                     ret_str += "#"
