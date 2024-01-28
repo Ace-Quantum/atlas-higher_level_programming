@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 """
-I really wish I hadn't yammered
+Sometimes you scream into the void
 """
 
 class Base:
 
     """
-    And I'd take it back if I could
+    And it's only to make yourself feel better
     """
 
     __nb_objects = 0
