@@ -80,15 +80,15 @@ class Rectangle(Base):
         """
 
         if self.__height == 0 or self.__width == 0:
-            return ""
+            print("")
         else:
             ret_str = ""
             for i in range(0, self.__height):
                 for j in range(0, self.__width):
                     ret_str += "#"
-                if i != self.__width - 1:
+                if i != self.__height - 1:
                     ret_str += "\n"
-                print(ret_str)
+            print(ret_str)
             
     def __str__(self):
 
