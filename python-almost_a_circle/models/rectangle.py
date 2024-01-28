@@ -74,6 +74,11 @@ class Rectangle(Base):
         return value
 
     def display(self):
+
+        """
+        There's some documentation
+        """
+
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
@@ -86,5 +91,10 @@ class Rectangle(Base):
                 return ret_str
             
     def __str__(self):
+
+        """
+        More documentation
+        """
+        
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}".format(
             self.id, self.x, self.y, self.__width, self.__height)
