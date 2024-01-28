@@ -86,7 +86,7 @@ class Rectangle(Base):
             for i in range(0, self.__height):
                 for j in range(0, self.__width):
                     ret_str += "#"
-                if i != self.__height - 1:
+                if i != self.__width - 1:
                     ret_str += "\n"
                 print(ret_str)
             
