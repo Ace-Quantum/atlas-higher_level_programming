@@ -73,7 +73,7 @@ class Rectangle(Base):
             raise ValueError(name + " must be >= 0")
         return value
 
-    def __str__(self):
+    def display(self):
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
