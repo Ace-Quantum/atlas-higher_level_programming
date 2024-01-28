@@ -88,13 +88,13 @@ class Rectangle(Base):
                     ret_str += "#"
                 if i != self.__height - 1:
                     ret_str += "\n"
-                return ret_str
+                print(ret_str)
             
     def __str__(self):
 
         """
         More documentation
         """
-        
+
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}".format(
             self.id, self.x, self.y, self.__width, self.__height)
