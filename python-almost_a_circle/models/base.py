@@ -27,7 +27,7 @@ class Base:
 
         if type(value) is not int:
             raise TypeError(name + " must be an integer")
-        if value <= 0 and (name == "height" or name == "width"):
+        elif value <= 0 and (name == "height" or name == "width"):
             raise ValueError(name + " must be > than 0")
         elif value < 0:
             raise ValueError(name + " must be >= 0")
