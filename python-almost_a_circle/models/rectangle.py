@@ -109,7 +109,7 @@ class Rectangle(Base):
         This method will update the value of the attributes
         """
 
-        """current_attrs = vars(self)"""
+        current_attrs = vars(self)
 
         if args is not None and len(args) > 0:
             if len(args) > 0:
@@ -123,6 +123,5 @@ class Rectangle(Base):
             if len(args) > 4:
                 self.__y = args[4]
         else:
-            for elem in kwargs.items():
-                if hasattr(self, elem):
-                    setattr(self, elem, kwargs[elem])
+            for key in kwargs:
+                setattr(self, key, kwargs[key])
