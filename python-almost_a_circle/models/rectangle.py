@@ -123,6 +123,6 @@ class Rectangle(Base):
             if len(args) > 4:
                 self.__y = args[4]
         else:
-            for elem in kwargs.iteritems():
+            for elem in kwargs.items():
                 if hasattr(self, elem):
                     setattr(self, elem, kwargs[elem])
