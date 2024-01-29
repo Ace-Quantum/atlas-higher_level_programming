@@ -109,6 +109,8 @@ class Rectangle(Base):
         This method will update the value of the attributes
         """
 
+        """current_attrs = vars(self)"""
+
         if args is not None and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]
@@ -120,5 +122,7 @@ class Rectangle(Base):
                 self.__x = args[3]
             if len(args) > 4:
                 self.__y = args[4]
-
-        
+        else:
+            for elem in kwargs.iteritems():
+                if hasattr(self, elem):
+                    setattr(self, elem, kwargs[elem])
