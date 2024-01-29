@@ -109,8 +109,6 @@ class Rectangle(Base):
         This method will update the value of the attributes
         """
 
-        current_attrs = vars(self)
-
         if args is not None and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]
