@@ -129,4 +129,12 @@ class Rectangle(Base):
         setting up a dictionary
         """
 
-        return vars(self)
+        ret_dict = {}
+
+        ret_dict.update({"id": self.id})
+        ret_dict.update({"width": self.width})
+        ret_dict.update({"height": self.height})
+        ret_dict.update({"x": self.x})
+        ret_dict.update({"y": self.y})
+
+        return ret_dict
