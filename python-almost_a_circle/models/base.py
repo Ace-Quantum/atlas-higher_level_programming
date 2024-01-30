@@ -26,5 +26,3 @@ class Base:
         Hey look I returned a list of dictionaries
         """
         return json.dumps(list_dictionaries)
-    
-    Base.to_json_string = staticmethod(Base.to_json_string)
