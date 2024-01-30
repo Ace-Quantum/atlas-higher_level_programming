@@ -18,8 +18,8 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        self.width = self.integer_validator("size", value)
-        self.height = self.integer_validator("size", value)
+        self.width = self.integer_validator("width", value)
+        self.height = self.integer_validator("width", value)
 
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
