@@ -48,3 +48,10 @@ class Square(Rectangle):
         else:
             for key in kwargs:
                 setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """
+        setting up a dictionary
+        """
+
+        return vars(self)
