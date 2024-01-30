@@ -50,4 +50,7 @@ class Square(Rectangle):
                 setattr(self, key, kwargs[key])
 
     def to_dictionary(self):
+        """
+        I forgot about documentation
+        """
         return super().to_dictionary()
