@@ -4,9 +4,9 @@
 time for squares
 """
 
-rec = __import__("rectangle").Rectangle
+from models.rectangle import Rectangle
 
-class Square(rec):
+class Square(Rectangle):
 
     """
     What do I do
