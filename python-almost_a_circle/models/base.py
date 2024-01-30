@@ -31,6 +31,7 @@ class Base:
         else:
             return "[]"
         
+    @classmethod
     def save_to_file(cls, list_objs):
         """
         this will save into a json file
