@@ -53,4 +53,12 @@ class Square(Rectangle):
         """
         I forgot about documentation
         """
-        return super().to_dictionary()
+        
+        ret_dict = {}
+
+        ret_dict.update({"id": self.id})
+        ret_dict.update({"size": self.size})
+        ret_dict.update({"x": self.x})
+        ret_dict.update({"y": self.y})
+
+        return ret_dict
