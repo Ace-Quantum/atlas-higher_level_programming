@@ -6,6 +6,7 @@ time for squares
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
 
     """
@@ -29,14 +30,13 @@ class Square(Rectangle):
         overiding str
         """
 
-        return "[Square] ({0}) {1}/{2} - {3}".format(
-            self.id, self.x, self.y, self.size)
-        
+        return "[Square] ({0}) {1}/{2} - {3}".format(self.id, self.x, self.y, self.size)
+
     def update(self, *args, **kwargs):
         """
         Updating the attributes of a square
         """
-        if args is  not None and len(args) > 0:
+        if args is not None and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
@@ -53,7 +53,7 @@ class Square(Rectangle):
         """
         I forgot about documentation
         """
-        
+
         ret_dict = {}
 
         ret_dict.update({"id": self.id})

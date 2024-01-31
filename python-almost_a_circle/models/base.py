@@ -7,6 +7,7 @@ Sometimes you scream into the void
 import json
 from os.path import isfile
 
+
 class Base:
 
     """
@@ -31,7 +32,7 @@ class Base:
             return json.dumps(list_dictionaries)
         else:
             return "[]"
-        
+
     @classmethod
     def save_to_file(cls, list_objs):
         """
@@ -44,23 +45,23 @@ class Base:
                 ret_list.append(i.to_dictionary())
         with open(cls.__name__ + ".json", "w") as f:
             f.write(cls.to_json_string(ret_list))
-            
+
     @staticmethod
     def from_json_string(json_string):
         if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
-    
+
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
         if cls.__name__ == "Square":
             dummy = cls(1)
-        
+
         dummy.update(**dictionary)
         return dummy
-    
+
     @classmethod
     def load_from_file(cls):
         filename = cls.__name__ + ".json"

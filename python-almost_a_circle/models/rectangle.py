@@ -6,6 +6,7 @@ Here's some documentation for a rectangle
 
 from models.base import Base
 
+
 class Rectangle(Base):
 
     """
@@ -31,7 +32,7 @@ class Rectangle(Base):
     @property
     def x(self):
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         self.__x = self.integer_validator("x", value)
@@ -39,7 +40,7 @@ class Rectangle(Base):
     @property
     def y(self):
         return self.__y
-    
+
     @y.setter
     def y(self, value):
         self.__y = self.integer_validator("y", value)
@@ -52,15 +53,13 @@ class Rectangle(Base):
         self.__y = self.integer_validator("y", y)
 
     def area(self):
-
         """
         I forgot I need documentation here
         """
 
         return self.__width * self.__height
-    
-    def integer_validator(self, name, value):
 
+    def integer_validator(self, name, value):
         """
         here's some documentation
         """
@@ -74,7 +73,6 @@ class Rectangle(Base):
         return value
 
     def display(self):
-
         """
         There's some documentation
         """
@@ -93,18 +91,17 @@ class Rectangle(Base):
                 if i != self.__height - 1:
                     ret_str += "\n"
             print(ret_str)
-            
-    def __str__(self):
 
+    def __str__(self):
         """
         More documentation
         """
 
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}".format(
-            self.id, self.x, self.y, self.__width, self.__height)
-    
-    def update(self, *args, **kwargs):
+            self.id, self.x, self.y, self.__width, self.__height
+        )
 
+    def update(self, *args, **kwargs):
         """
         This method will update the value of the attributes
         """
