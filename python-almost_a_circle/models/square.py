@@ -30,7 +30,8 @@ class Square(Rectangle):
         overiding str
         """
 
-        return "[Square] ({0}) {1}/{2} - {3}".format(self.id, self.x, self.y, self.size)
+        return "[Square] ({0}) {1}/{2} - {3}".format(
+            self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
         """
