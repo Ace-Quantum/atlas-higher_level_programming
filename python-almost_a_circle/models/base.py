@@ -5,6 +5,7 @@ Sometimes you scream into the void
 """
 
 import json
+from os.path import isfile
 
 class Base:
 
@@ -59,3 +60,16 @@ class Base:
         
         dummy.update(**dictionary)
         return dummy
+    
+    @classmethod
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        ret_list = []
+
+        if isfile(filename):
+            with open(filename, "r") as f:
+                instance_list = cls.from_json_string(f.read())
+            for i in instance_list:
+                ret_list.append(cls.create(**i))
+
+        return ret_list
