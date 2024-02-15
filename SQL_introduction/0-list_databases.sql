@@ -1,4 +1,4 @@
 -- Shows tables
 
-SELECT *
-FROM tables;
+SELECT * FROM tables
+SHOW tables;
