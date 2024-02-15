@@ -1,4 +1,4 @@
 -- Shows tables
-SELECT * TABLE
-ORDER BY TABLE ASC
-SHOW TABLE;
+SELECT * tables
+ORDER BY tables ASC
+SHOW tables;
