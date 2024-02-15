@@ -1,2 +1,3 @@
 -- Shows tables
-SHOW TABLES;
+SHOW TABLES
+ORDER BY TABLES;
