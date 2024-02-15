@@ -1,4 +1,4 @@
 -- Shows tables
-SELECT * tables
-ORDER BY tables ASC
-SHOW tables;
+
+use database_name;
+SHOW TABLES;
