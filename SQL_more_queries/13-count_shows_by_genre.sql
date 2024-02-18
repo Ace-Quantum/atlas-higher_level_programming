@@ -1,6 +1,6 @@
 -- I'm not losing to a typo again
 
-SELECT tv_genres.name AS genra,
+SELECT tv_genres.name AS genre,
 COUNT(tv_show_genres.genre_id) AS number_of_shows
 FROM tv_show_genres
 INNER JOIN tv_genres
