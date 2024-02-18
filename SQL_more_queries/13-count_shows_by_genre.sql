@@ -1,8 +1,9 @@
--- counts how many shows are in each genre
+-- I'm not losing to a typo again
 
-SELECT tv_show_genres.name AS Genra, 
-COUNT(tv_show_genres.name) AS number_of_shows
-FROM tv_genres
-NATURAL JOIN tv_show_genres
-ON tv_show_genres.id = tv_genres.genra_id
-WHERE number_of_shows > 0;
+SELECT tv_genres.name AS genra,
+COUNT(tv_show_genres.genre_id) AS number_of_shows
+FROM tv_show_genres
+INNER JOIN tv_genres
+ON tv_show_genres.genre_id = tv_genres.id
+GROUP BY tv_genres.name
+ORDER BY number_of_shows DESC;
