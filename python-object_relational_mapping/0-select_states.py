@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Here is a script to list states by IDs
+
 import MySQLdb
 import sys
 
