@@ -12,3 +12,4 @@ if __name__ == "__main__":
     cur.execute("SELECT name FROM states ORDER BY states.id ASC")
 
     print(cur._rows)
+    
