@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-# Here is a script to list states by IDs
+"""
+Here is a script to list states by IDs
+"""
 
 import MySQLdb
 import sys
@@ -12,4 +14,3 @@ if __name__ == "__main__":
     cur.execute("SELECT name FROM states ORDER BY states.id ASC")
 
     print(cur._rows)
-    
