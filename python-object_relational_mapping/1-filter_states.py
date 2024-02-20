@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     cur.execute(
         """
-    SELECT id, name 
+    SELECT id, name
     FROM states
     WHERE name LIKE 'N%'
     ORDER BY states.id ASC;"""
