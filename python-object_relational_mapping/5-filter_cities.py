@@ -28,10 +28,8 @@ if __name__ == "__main__":
     for result in results:
         cities_results.append(result[0])
 
-    for result in cities_results:
-        print(result, end=", ")
+    print(", ".join(cities_results))
 
-    print("\b\b ")
     # for state in results:
         # print(results[0], end=", ")
 
