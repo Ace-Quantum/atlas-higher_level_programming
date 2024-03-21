@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const MyArray = ['C is fun', 'Python is cool', 'JavaScript is amazing']
+const MyArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 let i = 0;
 
 while (MyArray[i] != null) {
