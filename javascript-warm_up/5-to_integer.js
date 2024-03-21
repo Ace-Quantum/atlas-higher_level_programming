@@ -2,7 +2,7 @@
 
 const args = process.argv;
 
-let isanumber = args[2];
+const isanumber = args[2];
 
 if (isNaN(isanumber)) {
   console.log('Not a number');
