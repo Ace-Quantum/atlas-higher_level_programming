@@ -10,7 +10,7 @@ while (args[i] != null) {
 if (i === 2) {
   console.log('No argument');
 } else {
-  i = 0;
+  i = 2;
   while(args[i] != null) {
   console.log(args[i]);
     i++;
