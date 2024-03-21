@@ -14,4 +14,4 @@ function factorial (num) {
   console.log(fact);
 }
 
-factorial(num)
+factorial(num);
