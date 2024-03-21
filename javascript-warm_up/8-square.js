@@ -9,7 +9,7 @@ if (args.length < 3) {
   console.log('Missing size');
 }
 
-if (isNaN(argv[2])) {
+if (isNaN(args[2])) {
   console.log('Missing size');
 }
 
