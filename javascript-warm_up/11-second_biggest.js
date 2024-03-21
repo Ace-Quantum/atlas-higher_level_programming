@@ -10,9 +10,11 @@ if (args.length < 2) {
 }
 
 while (args[i] != null) {
-  if (args[i] > biggest) {
+  if (parseInt(args[i]) > biggest) {
     second_biggest = biggest;
-    biggest = args[i];
+    biggest = parseInt(args[i]);
+  } else if (parseInt(args[i]) > second_biggest) {
+    second_biggest = parseInt(args[i]);
   }
   i++;
 }
