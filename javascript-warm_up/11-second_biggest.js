@@ -3,7 +3,7 @@
 const args = process.argv;
 let i = 0;
 let biggest = 0;
-let second_biggest = 0;
+let Second_Biggest = 0;
 
 if (args.length < 2) {
   console.log('0');
@@ -11,12 +11,12 @@ if (args.length < 2) {
 
 while (args[i] != null) {
   if (parseInt(args[i]) > biggest) {
-    second_biggest = biggest;
+    Second_Biggest = biggest;
     biggest = parseInt(args[i]);
-  } else if (parseInt(args[i]) > second_biggest) {
-    second_biggest = parseInt(args[i]);
+  } else if (parseInt(args[i]) > Second_Biggest) {
+    Second_Biggest = parseInt(args[i]);
   }
   i++;
 }
 
-console.log(second_biggest);
+console.log(Second_Biggest);
