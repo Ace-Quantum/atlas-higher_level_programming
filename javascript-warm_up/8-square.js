@@ -3,9 +3,13 @@
 const args = process.argv;
 
 let i = 0;
-let str = ''
+let str = '';
 
 if (args.length < 3) {
+  console.log('Missing size');
+}
+
+if (isNaN(argv[2])) {
   console.log('Missing size');
 }
 
