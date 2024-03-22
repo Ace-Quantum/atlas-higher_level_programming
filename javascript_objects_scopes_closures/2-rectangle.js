@@ -3,13 +3,12 @@
 class Rectangle {
   constructor (w, h) {
     if (w < 1 || h < 1 || typeof (w) === 'undefined' || typeof (h) === 'undefined') {
-      //pass
+      // pass
     } else {
       this.width = w;
       this.height = h;
     }
   }
 }
-  
-  module.exports = Rectangle;
-  
+
+module.exports = Rectangle;
