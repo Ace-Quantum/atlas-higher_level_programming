@@ -2,7 +2,7 @@
 
 x = 0;
 
-add();
+// add();
 
 function add (a, b) {
 //   const args = process.argv;
@@ -12,3 +12,5 @@ function add (a, b) {
   x = (a + b);
   return (x);
 }
+
+exports.add = add;
