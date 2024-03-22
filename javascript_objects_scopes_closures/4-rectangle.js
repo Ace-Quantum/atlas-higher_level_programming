@@ -27,22 +27,20 @@ class Rectangle {
   }
 
   rotate () {
-    let h = this.height;
-    let w = this.width;
+    const h = this.height;
+    const w = this.width;
 
     this.height = w;
     this.width = h;
   }
 
   double () {
-    let h = this.height;
-    let w = this.width;
+    const h = this.height;
+    const w = this.width;
 
     this.height = (h * 2);
     this.width = (w * 2);
   }
-
 }
-  
+
 module.exports = Rectangle;
-  
