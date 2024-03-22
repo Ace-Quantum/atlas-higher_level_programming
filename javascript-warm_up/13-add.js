@@ -1,12 +1,14 @@
 #!/usr/bin/node
 
-const args = process.argv;
+x = 0;
 
-const a = parseInt(args[2]);
-const b = parseInt(args[3]);
+add();
 
 function add (a, b) {
-  console.log(a + b);
-}
+//   const args = process.argv;
 
-add(a, b);
+//   const a = parseInt(args[2]);
+//   const b = parseInt(args[3]);
+  x = (a + b);
+  return (x);
+}
