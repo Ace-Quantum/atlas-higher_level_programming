@@ -12,9 +12,9 @@ class Rectangle {
 
   print () {
     let i = 0;
-    let str = ''
+    let str = '';
     while (i < this.width) {
-      str = str + 'X'
+      str = str + 'X';
       i++;
     }
 
