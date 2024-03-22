@@ -9,21 +9,22 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
-      let i = 0;
-      let str = ''
-      while (i < this.width) {
-        str = str + 'X'
-        i++;
-      }
 
-      i = 0;
-
-      while (i < this.height) {
-        console.log(str);
-        i++;
-      }
+  print () {
+    let i = 0;
+    let str = ''
+    while (i < this.width) {
+      str = str + 'X'
+      i++;
     }
+
+    i = 0;
+
+    while (i < this.height) {
+      console.log(str);
+      i++;
+    }
+  }
 }
 
 module.exports = Rectangle;
