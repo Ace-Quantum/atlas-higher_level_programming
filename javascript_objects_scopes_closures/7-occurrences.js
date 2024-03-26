@@ -6,9 +6,9 @@ exports.nbOccurences = function (list, searchElement) {
 
   while (i < list.length) {
     if (list[i] === searchElement) {
-        c++;
+      c++;
     }
-    i++
+    i++;
   }
   return c;
-}
+};
