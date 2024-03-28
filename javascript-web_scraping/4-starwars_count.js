@@ -1,6 +1,5 @@
 #!/usr/bin/node
 
-const { title } = require('process');
 const request = require('request');
 const args = process.argv;
 
@@ -17,7 +16,7 @@ request(StarWarsData, function (error, response, body) {
     // console.log(data.results[key])
     for (const secondkey in data.results[key].characters) {
       // console.log('howdy')
-      tokens = (data.results[key].characters[secondkey].split('/'));
+      let tokens = (data.results[key].characters[secondkey].split('/'));
       if (tokens[5] === '18') {
         i++;
       }
