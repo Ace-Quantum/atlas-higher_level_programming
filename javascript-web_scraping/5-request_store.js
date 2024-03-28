@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const fs = require('fs');
-const { request } = require('http');
+const request = require('request');
 const args = process.argv;
 
 const url = args[2];
