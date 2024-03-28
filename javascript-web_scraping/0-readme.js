@@ -6,12 +6,10 @@ const args = process.argv;
 // console.log('hello');
 
 fs.readFile(args[2], (err, content) => {
-    if (err) throw err;
+  if (err) throw err;
 
-    console.log(content.toString());
-
+  console.log(content.toString());
 });
-
 
 // console.log('hello?');
 // const fs = require('fs');
@@ -26,7 +24,7 @@ fs.readFile(args[2], (err, content) => {
 //     console.log(content.toString());
 //     console.log('heck');
 //   })
-  
+
 // }
 
 // exports.TaskReadFile = TaskReadFile;
