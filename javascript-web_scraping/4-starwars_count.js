@@ -16,7 +16,7 @@ request(StarWarsData, function (error, response, body) {
     // console.log(data.results[key])
     for (const secondkey in data.results[key].characters) {
       // console.log('howdy')
-      let tokens = (data.results[key].characters[secondkey].split('/'));
+      const tokens = (data.results[key].characters[secondkey].split('/'));
       if (tokens[5] === '18') {
         i++;
       }
