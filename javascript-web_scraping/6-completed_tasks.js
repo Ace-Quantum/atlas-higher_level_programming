@@ -18,7 +18,6 @@ request(url, function (error, response, body) {
 
     for (let i = 0; i < data.length - 1; i++) {
         let curID = data[i].userId;
-        i--;
         counter = 0;
         while (data[i].userId === curID && i < data.length - 1) {
             if (data[i].completed === true) {
@@ -27,6 +26,7 @@ request(url, function (error, response, body) {
             i++;
         }
         listprint[curID] = counter;
+        i--;
     }
     console.log(listprint)
 })
