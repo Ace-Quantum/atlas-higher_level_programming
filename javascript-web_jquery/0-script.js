@@ -1,10 +1,17 @@
 #!/usr/bin/node
 
-const doc = require('./tester.html')
-const header = doc.querySelector("header");
+const { JSDOM } = require('jsdom')
 
-header.addEventListener("load", doc)
+const fs = require('fs')
+const file = fs.readFileSync('./tester.html', 'utf-8');
+
+const dom = new JSDOM(html);
+const doc = dom.window.document;
+
+const header = doc.querySelector("header");
 
 function MakeItRed() {
     header.style.color = "#FF0000";
 }
+
+header.addEventListener("load", MakeItRed)
