@@ -28,6 +28,7 @@ request(url, function (error, response, body) {
             }
             i++;
             if (data[i].userId != curID) {
+                console.log('breaking');
                 i--;
                 break;
             }
