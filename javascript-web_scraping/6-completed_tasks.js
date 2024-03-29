@@ -14,7 +14,9 @@ function CompareUserID(a, b) {
 request(url, function (error, response, body) {
     if (error) console.log(error);
     const data = JSON.parse(body);
+    console.log("before sort: " + data)
     data.sort(CompareUserID)
+    console.log("after sort: " + data)
 
     for (let i = 0; i < data.length - 1; i++) {
         let curID = data[i].userId;
