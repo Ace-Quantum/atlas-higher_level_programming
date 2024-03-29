@@ -1,11 +1,5 @@
-#!/usr/bin/node
 
-const { JSDOM } = require('jsdom');
-
-const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>')
-const document = dom.window.document
-
-const header = document.querySelector("header")
+// const header = document.querySelector("header")
 header.addEventListener("load", MakeItRed)
 
 function MakeItRed() {
