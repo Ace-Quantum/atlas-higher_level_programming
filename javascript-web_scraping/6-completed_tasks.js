@@ -25,6 +25,7 @@ request(url, function (error, response, body) {
             i++;
         }
         listprint[curID] = counter;
+        i--;
         counter = 0;
     }
     console.log(listprint)
