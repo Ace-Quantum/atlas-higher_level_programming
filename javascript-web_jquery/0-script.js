@@ -1,6 +1,5 @@
 
-// const header = document.querySelector("header")
-header.addEventListener("load", MakeItRed)
+window.addEventListener("load", MakeItRed)
 
 function MakeItRed() {
     header.style.color = "#FF0000"
