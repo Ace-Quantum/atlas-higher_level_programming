@@ -38,6 +38,10 @@ request(url, function (error, response, body) {
             if (i > data.length - 1) {
                 break
             }
+            if (data[i].userId != curID) {
+                i--;
+                break;
+            }
         }
         // i--;
         listprint[curID] = counter;
