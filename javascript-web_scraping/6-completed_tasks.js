@@ -20,7 +20,7 @@ request(url, function (error, response, body) {
         let curID = data[i].userId;
         // console.log("user id: " + data[i].userId)
         // console.log("curID: " + curID)
-        while (data[i].userId === curID && i < data.length - 1) {
+        while (data[i].userId === curID && i <= data.length - 1) {
             console.log("user id: " + data[i].userId)
             console.log("i: " + i)
             if (data[i].completed === true) {
@@ -28,7 +28,7 @@ request(url, function (error, response, body) {
             }
             i++;
             if (data[i].userId != curID) {
-                console.log('breaking');
+                // console.log('breaking');
                 i--;
                 break;
             }
