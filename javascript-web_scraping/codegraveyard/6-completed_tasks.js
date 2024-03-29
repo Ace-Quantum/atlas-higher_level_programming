@@ -10,20 +10,18 @@ let counter = 0;
 request(url, function (error, response, body) {
     if (error) console.log(error);
     const data = JSON.parse(body);
-
-    for (let i = 0; data[i] != null; i++) {
-        let curID = data[i].userId;
-        console.log(data[i])
-        while (data[i].userId === curID) {
-            if (data[i].completed === true) {
+    for (let key of data) {
+        let curID = key.userId;
+        while (key.userId === curID) {
+            if (key.completed === true) {
                 counter++;
             }
-            i++;
+            key++;
+            console.log('key: ' + key.user)
         }
         listprint[curID] = counter;
-        curID = data[i].userId;
+        curID = key.userId;
         counter = 0;
-    }})
-
-
-console.log(listprint)
+    }
+    console.log(listprint)
+})
