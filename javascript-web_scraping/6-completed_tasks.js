@@ -28,6 +28,7 @@ request(url, function (error, response, body) {
             }
             i++;
         }
+        i--;
         listprint[curID] = counter;
         counter = 0;
     }
