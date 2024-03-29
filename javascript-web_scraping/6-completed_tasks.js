@@ -16,9 +16,9 @@ request(url, function (error, response, body) {
     const data = JSON.parse(body);
     data.sort(CompareUserID)
 
-    for (let i = 0; i <= data.length; i++) {
+    for (let i = 0; i <= data.length - 1; i++) {
         let curID = data[i].userId;
-        while (data[i].userId === curID && i <= data.length) {
+        while (data[i].userId === curID && i < data.length - 1) {
             if (data[i].completed === true) {
                 counter++;
             }
