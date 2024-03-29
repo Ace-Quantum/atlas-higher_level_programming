@@ -14,13 +14,14 @@ function CompareUserID(a, b) {
 request(url, function (error, response, body) {
     if (error) console.log(error);
     const data = JSON.parse(body);
-    data.sort(CompareUserID)
+    // data.sort(CompareUserID)
 
     for (let i = 0; i <= data.length - 1; i++) {
         let curID = data[i].userId;
-        console.log("user id: " + data[i].userId)
-        console.log("curID: " + curID)
+        // console.log("user id: " + data[i].userId)
+        // console.log("curID: " + curID)
         while (data[i].userId === curID && i < data.length - 1) {
+            console.log("user id: " + data[i].userId)
             if (data[i].completed === true) {
                 counter++;
             }
