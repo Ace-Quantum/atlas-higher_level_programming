@@ -20,6 +20,7 @@ request(url, function (error, response, body) {
         let curID = data[i].userId;
         while (data[i].userId === curID && i < data.length - 1) {
             if (data[i].completed === true) {
+                console.log('hello')
                 counter++;
             }
             i++;
