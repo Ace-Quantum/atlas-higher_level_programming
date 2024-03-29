@@ -27,8 +27,15 @@ request(url, function (error, response, body) {
                 counter++;
             }
             i++;
+            if (data[i].userId != curID) {
+                i--;
+                break;
+            }
+            else {
+                // pass
+            }
         }
-        i--;
+        // i--;
         listprint[curID] = counter;
         counter = 0;
     }
