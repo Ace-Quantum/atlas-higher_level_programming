@@ -13,11 +13,7 @@ request(url, function (error, response, body) {
 
     for (let i = 0; i < data.length - 1; i++) {
         let curID = data[i].userId;
-        // console.log("typof data[i]: " + typeof(data[i]))
-        // console.log("curID : " + curID)
-        // console.log("data " + i + " : " + data[i])
         while (data[i].userId === curID && i < data.length - 1) {
-            // console.log("Completed?: " + data[i].completed)
             if (data[i].completed === true) {
                 counter++;
             }
@@ -29,5 +25,3 @@ request(url, function (error, response, body) {
     console.log(listprint)
 })
 
-
-console.log('listprint: ' + listprint)
