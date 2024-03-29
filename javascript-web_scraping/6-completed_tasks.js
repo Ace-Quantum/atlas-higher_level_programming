@@ -18,16 +18,22 @@ request(url, function (error, response, body) {
 
     for (let i = 0; i <= data.length - 1; i++) {
         let curID = data[i].userId;
-        let j = i;
         // console.log("user id: " + data[i].userId)
         // console.log("curID: " + curID)
-        while (data[j].userId === curID && j < data.length - 1) {
-            console.log("user id: " + data[j].userId)
-            console.log("j: " + j)
-            if (data[j].completed === true) {
+        while (data[i].userId === curID && i < data.length - 1) {
+            console.log("user id: " + data[i].userId)
+            console.log("i: " + i)
+            if (data[i].completed === true) {
                 counter++;
             }
-            j++;
+            i++;
+            if (data[i].userId != curID) {
+                i--;
+                break;
+            }
+            else {
+                // pass
+            }
         }
         // i--;
         listprint[curID] = counter;
