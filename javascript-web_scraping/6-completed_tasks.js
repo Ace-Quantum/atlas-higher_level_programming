@@ -35,10 +35,16 @@ request(url, function (error, response, body) {
             else {
                 // pass
             }
+            if (i > data.length - 1) {
+                break
+            }
         }
         // i--;
         listprint[curID] = counter;
         counter = 0;
+        if (i > data.length - 1) {
+            break
+        }
     }
     console.log(listprint)
 })
