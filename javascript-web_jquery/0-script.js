@@ -1,9 +1,6 @@
+const header = document.querySelector("header")
 
-window.addEventListener("load", MakeItRed)
-
-function MakeItRed() {
-    header.style.color = "#FF0000"
-}
+header.style.color = "#FF0000"
 
 // Old code I no longer wish to see
 // const { JSDOM } = require('jsdom')
