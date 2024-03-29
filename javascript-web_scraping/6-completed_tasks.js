@@ -27,14 +27,14 @@ request(url, function (error, response, body) {
                 counter++;
             }
             i++;
-            if (data[i].userId != curID) {
-                // console.log('breaking');
-                i--;
-                break;
-            }
-            else {
-                // pass
-            }
+            // if (data[i].userId != curID) {
+            //     // console.log('breaking');
+            //     i--;
+            //     break;
+            // }
+            // else {
+            //     // pass
+            // }
             if (i > data.length - 1) {
                 break
             }
