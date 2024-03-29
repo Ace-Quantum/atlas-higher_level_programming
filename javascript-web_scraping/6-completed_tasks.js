@@ -31,7 +31,7 @@ request(url, function (error, response, body) {
             }
         }
         // i--;
-        listprint[curID] += counter;
+        listprint[curID] = listprint[curID] + counter;
         counter = 0;
         if (i > data.length - 1) {
             break
