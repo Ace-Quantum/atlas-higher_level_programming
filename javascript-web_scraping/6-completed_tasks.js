@@ -16,11 +16,11 @@ request(url, function (error, response, body) {
     const data = JSON.parse(body);
     // data.sort(CompareUserID)
 
-    for (let i = 0; i <= data.length - 1; i++) {
+    for (let i = 0; i <= data.length; i++) {
         let curID = data[i].userId;
         // console.log("user id: " + data[i].userId)
         // console.log("curID: " + curID)
-        while (data[i].userId === curID && i < data.length - 1) {
+        while (data[i].userId === curID && i < data.length) {
             console.log("user id: " + data[i].userId)
             console.log("i: " + i)
             if (data[i].completed === true) {
