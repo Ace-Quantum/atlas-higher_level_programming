@@ -5,7 +5,7 @@ function MakeItRed() {
     header.style.color = "#FF0000"
 }
 
-
+module.exports = MakeItRed
 
 // Old code I no longer wish to see
 // const { JSDOM } = require('jsdom')
