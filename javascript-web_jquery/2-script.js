@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
 $('#red_header').on('click', function() {
-    $('header').(css('color', 'red'));
+    $('header').css('color', 'red');
 })
