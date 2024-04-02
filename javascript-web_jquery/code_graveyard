@@ -1,0 +1,25 @@
+#!/bin/usr/node
+
+let char = "";
+
+$.ajax({
+    url: "https://swapi-api.hbtn.io/api/people/5/?format=json",
+    success: function(data) {
+        return data
+    }
+    
+})
+
+$("#character").text(
+    $(function () {
+
+    })
+)
+
+
+$("#character").text(
+    $(function () {
+        $.ajax({
+            url: 'https://swapi-api.hbtn.io/api/people/5/?format=json',
+            success: function(data) 
+            
