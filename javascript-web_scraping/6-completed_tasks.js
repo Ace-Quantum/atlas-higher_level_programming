@@ -15,29 +15,23 @@ request(url, function (error, response, body) {
     if (error) console.log(error);
     const data = JSON.parse(body);
 
-    for (let i = 0; i <= data.length - 1; i++) {
+    for (let i = 0; i < data.length; i++) {
         let curID = data[i].userId;
-        while (data[i].userId === curID && i <= data.length - 1) {
-            if (data[i].completed === true) {
+        counter = 0; // Reset counter for each user ID
+
+        // Check all subsequent items for the same user ID
+        for (let j = i; j < data.length; j++) {
+            if (data[j].userId === curID && data[j].completed === true) {
                 counter++;
-            }
-            i++;
-            if (i > data.length - 1) {
-                break
-            }
-            if (data[i].userId != curID) {
-                i--;
+            } else if (data[j].userId !== curID) {
+                // Break when encountering a different user ID
                 break;
             }
         }
-        // i--;
+
         listprint[curID] = counter;
-        counter = 0;
-        if (i > data.length - 1) {
-            break
-        }
+        i += counter - 1; // Skip the processed items
     }
-    console.log(listprint)
-})
 
-
+    console.log(listprint);
+});
